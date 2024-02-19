@@ -36,6 +36,7 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-BC8LTF5LLD"></script>
 <script>
@@ -133,26 +134,25 @@
             <p>
               I strive to associate myself with an organization where I can utilize my skills in the best possible manner, and learn new skills and technologies which further gives me an opportunity to grow in my career journey while contributing to the development of the organization.
             </p>
-			<a href="inner.html" target="_blank">Click here to view Web Application Programming and course work in detail</a>
+			<a href="https://sai-divakar-reddy-gali.github.io/inner.html" target="_blank">Click here to view Web Application Programming and course work in detail</a>
           </div>
         </div>
         <script>
-          $(document).ready(function(){
-              $("#toggle-theme").click(function(){
-                  $("body").toggleClass("dark-theme");
-              });
-          });
-      </script>
-      
-      <style>
-          .dark-theme {
-              background-color: #333;
-              color: white;
-          }
-      </style>
-      
-      <button id="toggle-theme">Toggle Theme</button>
-      
+    $(document).ready(function(){
+        $("#toggle-theme").click(function(){
+            $("body").toggleClass("dark-theme");
+        });
+    });
+</script>
+
+<style>
+    .dark-theme {
+        background-color: #333;
+        color: white;
+    }
+</style>
+
+<button id="toggle-theme">Toggle Theme</button>
       </div>
     </section><!-- End About Section -->
 
@@ -322,7 +322,13 @@
 					
 					
 		    <div id="weather-app"></div>
-              
+			
+			<section class="resume-section" id="Basic_javascript">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Basic javascript</h2>
+                    <h4 class="mt-4">Counter using React</h4>
+                    <div id="root"></div>
+			
           </div>
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
             <h3 class="resume-title">Professional Experience</h3>
@@ -367,11 +373,6 @@
         </div>
 
       </div>
-      <section class="resume-section" id="Basic_javascript">
-        <div class="resume-section-content">
-            <h2 class="mb-5">Basic JS</h2>
-            <h4 class="mt-4">Counter Function by React</h4>
-      <div id="root"></div>
     </section><!-- End Resume Section -->
 
           </div>
@@ -415,7 +416,7 @@
             </div>
 
           </div>
- 
+
           <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
             <form action="forms/contact.php" method="post" role="form" class="php-email-form">
               <div class="row">
@@ -449,6 +450,7 @@
 
       </div>
     </section><!-- End Contact Section -->
+
   </main><!-- End #main -->
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
@@ -751,28 +753,28 @@
 
   window.onload = checkVisit;
 </script>
-<script type="text/babel">
-  function Counter() {
-    const [count, setCount] = React.useState(0);
-    const increment = () => {
-      setCount(count + 1);
-    };
-    const decrement = () => {
-      setCount(count - 1);
-    };
-
-    return (
-      <div>
-        <h5>Counter: {count}</h5>
-        {/* Button to increment the counter */}
-        <button className="btn btn-secondary mx-1" onClick={increment}>Increment</button>
-        {/* Button to decrement the counter */}
-        <button className = "btn btn-secondary" onClick={decrement}>Decrement</button>
-      </div>
-    );
-  }
-  ReactDOM.render(<Counter />, document.getElementById('root'));
-</script>
+ <script type="text/babel">
+            function Counter() {
+              const [count, setCount] = React.useState(0);
+              const increment = () => {
+                setCount(count + 1);
+              };
+              const decrement = () => {
+                setCount(count - 1);
+              };
+        
+              return (
+                <div>
+                  <h5>Counter: {count}</h5>
+                  {/* Button to increment the counter */}
+                  <button className="btn btn-secondary mx-1" onClick={increment}>Increment</button>
+                  {/* Button to decrement the counter */}
+                  <button className = "btn btn-secondary" onClick={decrement}>Decrement</button>
+                </div>
+              );
+            }
+            ReactDOM.render(<Counter />, document.getElementById('root'));
+        </script>s
 </body>
 
 </html>
